@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "jBK+PKyczAjy4v8Ea7YcGEaHulxJQGPzFv6vNYyW3f0d4GTZFrCjHO6inMEUOZRvOpvM6txKpX8aSOtqSv8UMA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\MTran1\\Documents\\Github\\DungeonMaster\\Assignment1\\Assignment1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MTran1\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.22\\microsoft.windowsdesktop.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\MTran1\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.22\\microsoft.netcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\MTran1\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.22\\microsoft.aspnetcore.app.ref.6.0.22.nupkg.sha512",
+    "C:\\Users\\MTran1\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.22\\microsoft.netcore.app.host.win-x64.6.0.22.nupkg.sha512"
+  ],
+  "logs": []
+}

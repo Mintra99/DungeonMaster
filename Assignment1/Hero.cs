@@ -133,6 +133,10 @@ namespace DungeonMasterApp
         // Display hero details
         public string Display()
         {
+            int totalStr = HeroAttribute.Strength;
+            int totalDex = HeroAttribute.Dexterity;
+            int totalInt = HeroAttribute.Intelligence; 
+           
             StringBuilder stringBuilder = new StringBuilder();
 
             stringBuilder.AppendLine($"- Name: {Name}");
@@ -145,6 +149,23 @@ namespace DungeonMasterApp
             stringBuilder.AppendLine($"- Strength: {HeroAttribute.Strength}");
             stringBuilder.AppendLine($"- Dexterity: {HeroAttribute.Dexterity}");
             stringBuilder.AppendLine($"- Intelligence: {HeroAttribute.Intelligence}");
+
+            // Append attributes from equipment
+            foreach (var Equipment in Equipments)
+            {
+                if (Equipment.Value is Armor armor)
+                {
+                    // Append armor attributes to hero attributes
+                    totalStr += armor.ArmorAttribute.Strength;
+                    totalDex += armor.ArmorAttribute.Dexterity;
+                    totalInt += armor.ArmorAttribute.Intelligence;
+                }
+            }
+
+            stringBuilder.AppendLine($"- Total Strength: {totalStr}");
+            stringBuilder.AppendLine($"- Total Dexterity: {totalDex}");
+            stringBuilder.AppendLine($"- Total Intelligence: {totalInt}");
+
 
             stringBuilder.AppendLine($"- Total attribute: {CalculateTotalAttribute()}");
             stringBuilder.AppendLine($"- Damage: {CalculateDamage()}");

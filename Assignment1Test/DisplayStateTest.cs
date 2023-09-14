@@ -25,6 +25,10 @@ namespace Assignment1Test
             stringBuilder.AppendLine($"- Dexterity: 1");
             stringBuilder.AppendLine($"- Intelligence: 8");
 
+            stringBuilder.AppendLine($"- Total Strength: 1");
+            stringBuilder.AppendLine($"- Total Dexterity: 1");
+            stringBuilder.AppendLine($"- Total Intelligence: 8");
+
             stringBuilder.AppendLine($"- Total attribute: 10");
             stringBuilder.AppendLine($"- Damage: 1");
             stringBuilder.AppendLine("------------------");
@@ -64,6 +68,10 @@ namespace Assignment1Test
             stringBuilder.AppendLine($"- Strength: 1");
             stringBuilder.AppendLine($"- Dexterity: 1");
             stringBuilder.AppendLine($"- Intelligence: 8");
+
+            stringBuilder.AppendLine($"- Total Strength: 46");
+            stringBuilder.AppendLine($"- Total Dexterity: 31");
+            stringBuilder.AppendLine($"- Total Intelligence: 20");
 
             stringBuilder.AppendLine($"- Total attribute: 97");
             stringBuilder.AppendLine($"- Damage: 102");

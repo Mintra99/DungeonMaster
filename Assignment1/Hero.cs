@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
-
+using System.Text;
 
 namespace DungeonMasterApp
 {
@@ -131,27 +131,33 @@ namespace DungeonMasterApp
         }
 
         // Display hero details
-        public void Display()
+        public string Display()
         {
-            Console.WriteLine($"- Name: {Name}");
-            Console.WriteLine($"- Class: {Class}");
-            Console.WriteLine($"- Level: {Level}");
-            Console.WriteLine("------------------");
-            Console.WriteLine("Hero Attributes:"); // Change to "Hero Attributes" from "Level Attributes"
+            StringBuilder stringBuilder = new StringBuilder();
+
+            stringBuilder.AppendLine($"- Name: {Name}");
+            stringBuilder.AppendLine($"- Class: {Class}");
+            stringBuilder.AppendLine($"- Level: {Level}");
+            stringBuilder.AppendLine("------------------");
+            stringBuilder.AppendLine("Hero Attributes:");
 
             // Display the hero attributes using HeroAttribute
-            Console.WriteLine($"- Strength: {HeroAttribute.Strength}");
-            Console.WriteLine($"- Dexterity: {HeroAttribute.Dexterity}");
-            Console.WriteLine($"- Intelligence: {HeroAttribute.Intelligence}");
+            stringBuilder.AppendLine($"- Strength: {HeroAttribute.Strength}");
+            stringBuilder.AppendLine($"- Dexterity: {HeroAttribute.Dexterity}");
+            stringBuilder.AppendLine($"- Intelligence: {HeroAttribute.Intelligence}");
 
-            Console.WriteLine($"- Total attribute: {CalculateTotalAttribute()}");
-            Console.WriteLine($"- Damage: {CalculateDamage()}");
-            Console.WriteLine("------------------");
-            Console.WriteLine("Equipments:");
+            stringBuilder.AppendLine($"- Total attribute: {CalculateTotalAttribute()}");
+            stringBuilder.AppendLine($"- Damage: {CalculateDamage()}");
+            stringBuilder.AppendLine("------------------");
+            stringBuilder.AppendLine("Equipments:");
+
             foreach (var Equipment in Equipments)
             {
-                Console.WriteLine($"- {Equipment.Value.Name} ({Equipment.Key})");
+                stringBuilder.AppendLine($"- {Equipment.Value.Name} ({Equipment.Key})");
             }
+
+            return stringBuilder.ToString();
         }
+
     }
 }

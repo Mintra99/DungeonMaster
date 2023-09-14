@@ -44,7 +44,7 @@ Heroes can equip weapns and armor. There are different types of weapons and armo
 
 
 ## Testing
-Unit tests for various functionalities are provided in the AssignmentTest project. You can run these tests to ensure the correctness of the code.
+Unit tests for various functionalities are provided in the Assignment1Test project. You can run these tests to ensure the correctness of the code.
 
 ## Contributions
 * Minh Christian Tran ([@Mintra99](https://github.com/Mintra99))

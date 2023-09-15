@@ -125,8 +125,6 @@ namespace DungeonMasterApp
             {
                 totDmg = 1 * (1 + damageAttribute / 100);
             }
-
-            // Implement damage calculation logic based on equipped weapons, attributes, etc.
             return totDmg;
         }
 
